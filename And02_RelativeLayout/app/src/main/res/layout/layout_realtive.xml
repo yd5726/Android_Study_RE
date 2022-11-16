@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:backgroundTint="#128017"
+        android:text="버튼1" />
+
+    <Button
+        android:id="@+id/btn2"
+        android:backgroundTint="#F44336"
+        android:text="버튼2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/btn3"
+        android:backgroundTint="#367CD2"
+        android:text="버튼3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"/>
+
+    <Button
+        android:id="@+id/btn4"
+        android:backgroundTint="#367CD2"
+        android:text="버튼4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"/>
+
+    <Button
+        android:id="@+id/btn5"
+        android:backgroundTint="#367CD2"
+        android:text="버튼5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"/>
+
+    <Button
+        android:id="@+id/btn6"
+        android:backgroundTint="#367CD2"
+        android:text="버튼6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"/>
+
+    <Button
+        android:id="@+id/bt7"
+        android:backgroundTint="#367CD2"
+        android:text="버튼7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true" />
+
+    <Button
+        android:id="@+id/bt8"
+        android:backgroundTint="#367CD2"
+        android:text="버튼8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true" />
+
+    <Button
+        android:id="@+id/bt9"
+        android:backgroundTint="#367CD2"
+        android:text="버튼9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true" />
+
+    <Button
+        android:id="@+id/bt10"
+        android:backgroundTint="#000000"
+        android:text="버튼10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn1"
+        android:layout_alignLeft="@+id/btn1"/>
+
+    <Button
+        android:id="@+id/bt11"
+        android:backgroundTint="#000000"
+        android:text="버튼11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/btn1"
+        android:layout_alignBaseline="@+id/btn1"/>
+
+    <Button
+        android:id="@+id/bt12"
+        android:backgroundTint="#000000"
+        android:text="버튼12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/btn1"
+        android:layout_alignBaseline="@+id/btn1"/>
+
+    <Button
+        android:id="@+id/bt13"
+        android:backgroundTint="#000000"
+        android:text="버튼13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/btn1"
+        android:layout_alignBaseline="@+id/btn3"/>
+
+    <Button
+        android:id="@+id/bt14"
+        android:backgroundTint="#000000"
+        android:text="버튼14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn1"
+        android:layout_alignLeft="@+id/btn1"/>
+</RelativeLayout>
