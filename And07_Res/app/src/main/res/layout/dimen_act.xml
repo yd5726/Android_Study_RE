@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <!--넓이 높이 미리 정의 : values > kmj_style.xml-->
+    <TextView
+        android:background="@color/tv_notice_back"
+        android:layout_width="@dimen/tv_notice_width"
+        android:layout_height="@dimen/tv_notice_height"/>
+    <TextView
+        android:background="@color/tv_notice_back"
+        android:layout_width="@dimen/tv_notice_width"
+        android:layout_height="@dimen/tv_notice_height"/>
+    <TextView
+    android:background="@color/tv_notice_back"
+    android:layout_width="@dimen/tv_notice_width"
+    android:layout_height="@dimen/tv_notice_height"/>
+    <TextView
+        style="@style/tv_notice_style"
+        android:text="글씨"/>
+    <TextView
+        style="@style/tv_notice_style2"
+        android:text="글씨"/>
+
+</LinearLayout>

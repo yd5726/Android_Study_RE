@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+     <Button
+        android:id="@+id/btn1"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="이전 이미지"
+        />
+        <Button
+            android:id="@+id/btn2"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="다음 이미지"
+            />
+    </LinearLayout>
+    <!-- 0dp 와 weight 사용하게 되면 크기를 가진 다른 뷰가
+    차지한 공간을 제외하고 나머지공간을 비율로 나눈다.-->
+
+    <!-- res <= 화면에 보이거나 하는 모든 리소스는 res폴더
+    하위에서 관리된다.(layout,drawble...)
+
+    ※영어 소문자로 시작하고 , 특수문자는 _ 허용
+    소문자와 영어를 혼합한 이름만 사용가능.
+    -->
+    <FrameLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/imgv1"
+            android:scaleType="fitXY"
+            android:src="@drawable/image1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/imgv2"
+            android:scaleType="fitXY"
+            android:src="@drawable/image2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <!-- visibility : invisible 투명 공간o
+         gone : 안보이고 공간 x
+         visible : default(기본 보이는상태)
+        -->
+
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/imgv3"
+            android:scaleType="fitXY"
+            android:src="@drawable/image3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+
+
+    </FrameLayout>
+
+
+
+
+</LinearLayout>

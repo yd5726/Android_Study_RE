@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <TextView
+        android:text="친구"
+        android:layout_marginLeft="15dp"
+        style="@style/text_style_name"/>
+    <TextView
+        android:background="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="3px"/>
+    <LinearLayout style="@style/profile">
+        <androidx.cardview.widget.CardView
+            app:cardCornerRadius="100dp"
+            android:layout_margin="10dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp">
+            <ImageView
+                android:src="@drawable/christmas_1280"
+                style="@style/profile_img">
+            </ImageView>
+        </androidx.cardview.widget.CardView>
+        <LinearLayout
+            style="@style/sub_profile">
+            <TextView
+                android:text="산타"
+                style="@style/text_style_name" />
+            <TextView
+                android:text="메리크리스마스"
+                style="@style/text_style_text" />
+        </LinearLayout>
+    </LinearLayout>
+    <TextView
+        android:background="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="3px"/>
+    <TextView
+        android:text="친구추가"
+        android:layout_marginLeft="15dp"
+        style="@style/text_style_text"/>
+    <LinearLayout style="@style/profile">
+        <androidx.cardview.widget.CardView
+            app:cardCornerRadius="100dp"
+            android:layout_margin="10dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp">
+            <ImageView
+                android:src="@drawable/christmas_1280"
+                style="@style/profile_img">
+            </ImageView>
+        </androidx.cardview.widget.CardView>
+        <LinearLayout
+            style="@style/sub_profile">
+            <TextView
+                android:text="산타"
+                style="@style/text_style_name" />
+            <TextView
+                android:text="메리크리스마스"
+                style="@style/text_style_text" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout style="@style/profile">
+        <androidx.cardview.widget.CardView
+            app:cardCornerRadius="100dp"
+            android:layout_margin="10dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp">
+            <ImageView
+                android:src="@drawable/christmas_1280"
+                style="@style/profile_img">
+            </ImageView>
+        </androidx.cardview.widget.CardView>
+        <LinearLayout
+            style="@style/sub_profile">
+            <TextView
+                android:text="산타"
+                style="@style/text_style_name" />
+            <TextView
+                android:text="메리크리스마스"
+                style="@style/text_style_text" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout style="@style/profile">
+        <androidx.cardview.widget.CardView
+            app:cardCornerRadius="100dp"
+            android:layout_margin="10dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp">
+            <ImageView
+                android:src="@drawable/flowers_dong_1920"
+                style="@style/profile_img">
+            </ImageView>
+        </androidx.cardview.widget.CardView>
+        <LinearLayout
+            style="@style/sub_profile">
+            <TextView
+                android:text="동백"
+                style="@style/text_style_name" />
+            <TextView
+                android:text="겨울이 왔어요"
+                style="@style/text_style_text" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout style="@style/profile">
+        <androidx.cardview.widget.CardView
+            app:cardCornerRadius="100dp"
+            android:layout_margin="10dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp">
+            <ImageView
+                android:src="@drawable/image1"
+                style="@style/profile_img">
+            </ImageView>
+        </androidx.cardview.widget.CardView>
+        <LinearLayout
+            style="@style/sub_profile">
+            <TextView
+                android:text="고슴도치"
+                style="@style/text_style_name" />
+            <TextView
+                android:text="춥다"
+                style="@style/text_style_text" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

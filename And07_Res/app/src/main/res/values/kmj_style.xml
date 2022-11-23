@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="tv_notice_width">100dp</dimen>
+    <dimen name="tv_notice_height">150dp</dimen>
+    <color name="tv_notice_back">#9D9D9D</color>
+
+    <style name="tv_notice_style">
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_width">200dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_margin">10dp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:background">#2196F3</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">20dp</item>
+    </style>
+    <!--재정의-->
+    <style name="tv_notice_style2" parent="tv_notice_style">
+        <item name="android:textSize">30dp</item>
+    </style>
+</resources>
