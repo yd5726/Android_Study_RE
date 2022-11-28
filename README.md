@@ -1,13 +1,12 @@
 # Android_Study_RE
-안드로이드
-## 안드로이드 학습과정
-1.HelloWorld
-2. RelativeLayout
-3. LinearLayout
-4. FrameLayout
-5. ScrollView
-6. Widget
-7. Resource
-8. Activity & Intent
-9. LifeCycle
-10. Fragment & Toast
+<h3>안드로이드 학습과정</h3><br>
+1.HelloWorld<br>
+2. RelativeLayout<br>
+3. LinearLayout<br>
+4. FrameLayout<br>
+5. ScrollView<br>
+6. Widget<br>
+7. Resource<br>
+8. Activity & Intent<br>
+9. LifeCycle<br>
+10. Fragment & Toast<br>
