@@ -10,5 +10,7 @@
 8. Activity & Intent<br>
 9. LifeCycle<br>
 10. Fragment & Toast<br>
+11. Adapter & RecyclerView<br>
 <hr>
 Project01. Vending Machine<br>
+Project02. RecyclerView<br>
