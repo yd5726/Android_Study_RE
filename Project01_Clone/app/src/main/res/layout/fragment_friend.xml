@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<androidx.core.widget.NestedScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,15 +7,22 @@
     tools:context=".friendlist.FriendFragment"
     android:orientation="vertical">
 
-    <ImageView
+    <!--ScrollView 는 하나의 자식요소만 가질 수 있기 때문에 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <ImageView
         android:src="@drawable/talk_banner"
         android:scaleType="fitXY"
         android:layout_margin="3dp"
         android:layout_width="match_parent"
         android:layout_height="100dp"/>
-    <LinearLayout
+        <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_margin="10dp"
         android:orientation="horizontal">
         <ImageView
             android:src="@drawable/profile_img1"
@@ -25,6 +32,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"
+            android:layout_margin="3dp"
             android:layout_gravity="center">
             <TextView
                 android:text="김영희"
@@ -39,20 +47,21 @@
                 android:layout_height="wrap_content"/>
         </LinearLayout>
     </LinearLayout>
-    <View
+        <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:layout_margin="10dp"
+        android:layout_margin="3dp"
         android:background="#D6D6D6"/>
-    <TextView
+        <TextView
         android:text="친구 75"
         android:layout_margin="10dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
-    <androidx.recyclerview.widget.RecyclerView
+        <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recv_friend_frag"
         android:padding="10dp"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"/>
-</LinearLayout>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

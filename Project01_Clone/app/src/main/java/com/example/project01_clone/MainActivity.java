@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.view.MenuItem;
 import android.widget.FrameLayout;
 
+import com.example.project01_clone.Chatlist.ChatFragment;
 import com.example.project01_clone.friendlist.FriendFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
@@ -42,6 +43,7 @@ public class MainActivity extends AppCompatActivity {
                     changeFragment(new FriendFragment());
                 }else if(item.getItemId() == R.id.btm_item2){
                     actionBar.setTitle("채팅");
+                    changeFragment(new ChatFragment());
                 }else if(item.getItemId() == R.id.btm_item3){
                     actionBar.setTitle("뷰");
                 }else if(item.getItemId() == R.id.btm_item4){

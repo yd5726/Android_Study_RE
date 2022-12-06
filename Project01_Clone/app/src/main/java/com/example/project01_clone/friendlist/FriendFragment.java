@@ -36,11 +36,11 @@ public class FriendFragment extends Fragment {
         View v = inflater.inflate(R.layout.fragment_friend, container, false);
 
         for(int i=0; i<30; i++){
-            list.add(new FriendDTO(imgArr[new Random().nextInt(imgArr.length)], "이름"+(i+1),"메시지"+(i+1)));
+            list.add(new FriendDTO(imgArr[new Random().nextInt(imgArr.length)], "친구 이름"+(i+1),"메시지"+(i+1)));
         }
 
         recv_friend_frag = v.findViewById(R.id.recv_friend_frag);
-        recv_friend_frag.setAdapter(new FriendAdapter(inflater, list));
+        recv_friend_frag.setAdapter(new FriendAdapter(inflater, list, getContext()));
         recv_friend_frag.setLayoutManager(new LinearLayoutManager(getContext(),RecyclerView.VERTICAL,false));
 
         return v;

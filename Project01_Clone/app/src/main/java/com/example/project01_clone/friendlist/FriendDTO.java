@@ -1,6 +1,8 @@
 package com.example.project01_clone.friendlist;
 
-public class FriendDTO {
+import java.io.Serializable;
+
+public class FriendDTO implements Serializable {
     private int imgRes;
     private  String name , msg;
 
