@@ -1,8 +1,9 @@
 package com.example.project01_clone.friendlist;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import android.app.SearchManager;
 import android.content.Intent;
-import android.media.tv.TvContentRating;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
@@ -10,11 +11,10 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import com.example.project01_clone.R;
 
-public class DetailActivity extends AppCompatActivity implements View.OnClickListener {
+public class DetailActivity extends AppCompatActivity implements View.OnClickListener{
+
     ImageView imgv_detail_profile;
     TextView tv_name, tv_msg;
     Button btn1, btn2, btn3;
@@ -44,7 +44,6 @@ public class DetailActivity extends AppCompatActivity implements View.OnClickLis
         btn3.setOnClickListener(this);
 
     }
-
     @Override
     public void onClick(View v) {
         // Intent <= 컴포넌트들 간의 통신을 맡고 있는 객체 (액티비티)
