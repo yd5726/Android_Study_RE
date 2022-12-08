@@ -11,6 +11,7 @@ import android.widget.FrameLayout;
 
 import com.example.project01_clone.chat.ChatFragment;
 import com.example.project01_clone.chat_exam.ChatExamFragment;
+import com.example.project01_clone.external.ExternalFragment;
 import com.example.project01_clone.friendlist.FriendFragment;
 import com.example.project01_clone.view.ViewFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
@@ -52,6 +53,7 @@ public class MainActivity extends AppCompatActivity {
                     changeFragment(new ViewFragment());
                 }else if(item.getItemId() == R.id.btm_item4){
                     actionBar.setTitle("쇼핑");
+                    changeFragment(new ExternalFragment());
                 }else if(item.getItemId() == R.id.btm_item5){
                     actionBar.setTitle("더보기");
                 }

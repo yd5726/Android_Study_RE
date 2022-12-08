@@ -2,6 +2,12 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <!-- 권한 : 앱이 휴대폰 OS의 어떤 기능등을 사용할건지 또는 사용가능한지
+         낮은 수준 : 인터넷
+         중간 - 중상 : 위치, 카메라, 갤러리 등 (사용자의 동의가 있어아만 사용이 가능하고 권한이 생긴다.)
+    -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
