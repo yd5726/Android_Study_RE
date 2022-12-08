@@ -12,6 +12,7 @@ import android.widget.FrameLayout;
 import com.example.project01_clone.chat.ChatFragment;
 import com.example.project01_clone.chat_exam.ChatExamFragment;
 import com.example.project01_clone.friendlist.FriendFragment;
+import com.example.project01_clone.view.ViewFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class MainActivity extends AppCompatActivity {
@@ -48,6 +49,7 @@ public class MainActivity extends AppCompatActivity {
                     changeFragment(new ChatExamFragment());
                 }else if(item.getItemId() == R.id.btm_item3){
                     actionBar.setTitle("뷰");
+                    changeFragment(new ViewFragment());
                 }else if(item.getItemId() == R.id.btm_item4){
                     actionBar.setTitle("쇼핑");
                 }else if(item.getItemId() == R.id.btm_item5){
