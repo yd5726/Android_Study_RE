@@ -17,7 +17,6 @@ public class SplashActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
-        /*getSupportActionBar().hide();*/
 
         ProgressDialog dialog = new ProgressDialog(this);
         dialog.setTitle("데이터 로딩");
