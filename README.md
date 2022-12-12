@@ -17,5 +17,6 @@ Project02. RecyclerView<br>
 <hr>
 <h3>안드로이드 초급</h3><br>
 1. Project01_Clone<br>
+2. Middle_Retrofit - REST API<br>
 <hr>
 Project01. WebToon_App<br>
