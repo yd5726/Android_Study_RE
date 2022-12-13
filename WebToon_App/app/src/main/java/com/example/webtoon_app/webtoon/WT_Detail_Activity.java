@@ -14,20 +14,28 @@ import com.example.webtoon_app.R;
 import com.example.webtoon_app.home.HomeFragment;
 
 public class WT_Detail_Activity extends AppCompatActivity {
-    ImageView iv_back_btn;
+    /*ImageView iv_back_btn;*/
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        overridePendingTransition(R.anim.vertical_enter, R.anim.none);
         setContentView(R.layout.activity_webtoon_detail);
 
-        iv_back_btn = findViewById(R.id.iv_back_btn);
+        //overridePendingTransition();
+        /*iv_back_btn = findViewById(R.id.iv_back_btn);
         iv_back_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(), MainActivity.class);
                 startActivity(intent);
             }
-        });
+        });*/
     }
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        overridePendingTransition(R.anim.none, R.anim.vertical_exit);
+    }
+
 }
