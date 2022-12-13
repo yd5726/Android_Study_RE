@@ -17,3 +17,15 @@
 Retrofit 공식 사이트 : https://square.github.io/retrofit/
 
 Retrofit API ( 정리 ) : 실무에서 많이 사용되는 API
+
+- ApiInterface 만들기
+- ApiClient <- 재사용하기 편하게 하려고 만듬.
+
+- 연동 테스트 해볼 것
+-----------------------------------------------------
+프로젝트 하나 만들기 : Exam_Middle_Retrofit
+
+Spring 연동 시켜보기 연습.
+
+데이터 받아온것으로 위젯의 내용하나 바꿔보기
+(ViewBinding 사용 연습)
