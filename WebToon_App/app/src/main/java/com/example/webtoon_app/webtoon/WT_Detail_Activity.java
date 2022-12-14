@@ -2,6 +2,7 @@ package com.example.webtoon_app.webtoon;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+import androidx.viewpager.widget.ViewPager;
 
 import android.os.Bundle;
 import android.view.View;
@@ -26,6 +27,10 @@ public class WT_Detail_Activity extends AppCompatActivity {
                 onBackPressed();
             }
         });
+
+        ViewPager vp = findViewById(R.id.viewpager);
+        VPAdapter adapter = new VPAdapter(getSupportFragmentManager());
+        vp.setAdapter(adapter);
     }
     @Override
     public void onBackPressed() {

@@ -12,6 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:orientation="vertical">
+        <!--상단바-->
         <include layout="@layout/top_toolbar_detail"/>
         <LinearLayout
             android:background="@color/dark_gray"
@@ -149,20 +150,29 @@
         android:layout_weight="1"
         android:orientation="vertical">
         <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tab"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
             <com.google.android.material.tabs.TabItem
+                android:id="@+id/tab_Item1"
                 android:text="홈"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
             <com.google.android.material.tabs.TabItem
+                android:id="@+id/tab_Item2"
                 android:text="작품소개"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
             <com.google.android.material.tabs.TabItem
+                android:id="@+id/tab_Item3"
                 android:text="소식"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
         </com.google.android.material.tabs.TabLayout>
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        <!--<include layout="@layout/card_banner"/>-->
     </LinearLayout>
 </LinearLayout>
