@@ -2,11 +2,13 @@ package com.example.webtoon_app;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
 import androidx.fragment.app.Fragment;
 
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.widget.FrameLayout;
+import android.widget.Toast;
 
 import com.example.webtoon_app.home.HomeFragment;
 import com.example.webtoon_app.novel.NovelFragment;
@@ -17,6 +19,7 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 public class MainActivity extends AppCompatActivity {
     BottomNavigationView btm_nav;
     FrameLayout container;
+    long pressedTime = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,5 +51,16 @@ public class MainActivity extends AppCompatActivity {
 
     public void changeFragment(Fragment fragment){
         getSupportFragmentManager().beginTransaction().replace(R.id.container, fragment).commit();
+    }
+
+    @Override
+    public void onBackPressed() {
+        if(System.currentTimeMillis() > pressedTime + 2000){
+            pressedTime = System.currentTimeMillis();
+            Toast.makeText(getApplicationContext(), "'뒤로'한번 더 누르시면 종료됩니다.", Toast.LENGTH_SHORT).show();
+        }else{
+            ActivityCompat.finishAffinity(this);
+            System.exit(0);
+        }
     }
 }

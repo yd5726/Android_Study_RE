@@ -3,13 +3,12 @@ package com.example.webtoon_app.home;
 import android.content.Intent;
 import android.os.Bundle;
 
+import androidx.appcompat.widget.Toolbar;
 import androidx.fragment.app.Fragment;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.animation.Animation;
-import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 
 import com.example.webtoon_app.R;
@@ -17,6 +16,7 @@ import com.example.webtoon_app.webtoon.WT_Detail_Activity;
 
 public class HomeFragment extends Fragment {
     ImageView WT3H_1;
+    Toolbar toolbar;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -30,6 +30,9 @@ public class HomeFragment extends Fragment {
                 startActivity(intent);
             }
         });
+
+        toolbar = v.findViewById(R.id.toolbar);
+        toolbar.setTitle("");
 
         return v;
     }

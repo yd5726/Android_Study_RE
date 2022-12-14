@@ -1,36 +1,31 @@
 package com.example.webtoon_app.webtoon;
 
-import static java.security.AccessController.getContext;
-
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.ImageView;
 
-import com.example.webtoon_app.MainActivity;
 import com.example.webtoon_app.R;
-import com.example.webtoon_app.home.HomeFragment;
 
 public class WT_Detail_Activity extends AppCompatActivity {
-    /*ImageView iv_back_btn;*/
+    Toolbar toolbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         overridePendingTransition(R.anim.vertical_enter, R.anim.none);
+
         setContentView(R.layout.activity_webtoon_detail);
 
-        //overridePendingTransition();
-        /*iv_back_btn = findViewById(R.id.iv_back_btn);
-        iv_back_btn.setOnClickListener(new View.OnClickListener() {
+        toolbar = findViewById(R.id.toolbar);
+        toolbar.setTitle("");
+        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
-                startActivity(intent);
+                onBackPressed();
             }
-        });*/
+        });
     }
     @Override
     public void onBackPressed() {

@@ -12,24 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:orientation="vertical">
-        <!--상단탭-->
-        <com.google.android.material.tabs.TabLayout
-            android:id="@+id/top_nav"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            <com.google.android.material.tabs.TabItem
-                android:icon="@drawable/ic_baseline_chevron_left_24"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
-            <com.google.android.material.tabs.TabItem
-                android:icon="@drawable/ic_baseline_heart_broken_24"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
-            <com.google.android.material.tabs.TabItem
-                android:icon="@drawable/ic_baseline_more_vert_24"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
-        </com.google.android.material.tabs.TabLayout>
+        <include layout="@layout/top_toolbar_detail"/>
         <LinearLayout
             android:background="@color/dark_gray"
             android:layout_weight="1.8"
@@ -157,7 +140,6 @@
                         </LinearLayout>
                     </LinearLayout>
                 </LinearLayout>
-
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>
@@ -183,5 +165,4 @@
                 android:layout_height="wrap_content"/>
         </com.google.android.material.tabs.TabLayout>
     </LinearLayout>
-
 </LinearLayout>
