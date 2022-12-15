@@ -23,6 +23,7 @@
                 android:layout_height="match_parent"
                 android:orientation="horizontal">
                 <TextView
+                    android:id="@+id/card_3banner_item1"
                     android:textColor="@color/black"
                     android:layout_marginRight="5dp"
                     android:gravity="center"
@@ -30,6 +31,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"/>
                 <TextView
+                    android:id="@+id/card_3banner_item2"
                     android:textColor="@color/orange"
                     android:gravity="center"
                     android:text="5"
@@ -43,6 +45,7 @@
                 android:layout_height="match_parent"
                 android:orientation="horizontal">
                 <TextView
+                    android:id="@+id/card_3banner_item3"
                     android:textColor="@color/black"
                     android:layout_marginRight="5dp"
                     android:gravity="center"
@@ -56,6 +59,7 @@
                 android:layout_height="match_parent"
                 android:orientation="horizontal">
                 <TextView
+                    android:id="@+id/card_3banner_item4"
                     android:textColor="@color/black"
                     android:gravity="center"
                     android:text="밀리언페이지"

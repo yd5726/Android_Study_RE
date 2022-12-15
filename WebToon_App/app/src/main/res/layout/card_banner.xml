@@ -24,6 +24,7 @@
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
                     <TextView
+                        android:id="@+id/card_banner_main"
                         android:textColor="@color/black"
                         android:textSize="16dp"
                         android:textStyle="bold"
@@ -31,6 +32,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"/>
                     <TextView
+                        android:id="@+id/card_banner_sub"
                         android:textColor="@color/dark_gray"
                         android:textSize="12dp"
                         android:textStyle="normal"

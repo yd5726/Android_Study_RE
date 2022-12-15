@@ -1,4 +1,4 @@
-package com.example.webtoon_app.novel;
+package com.example.webtoon_app.book;
 
 import android.os.Bundle;
 
@@ -10,13 +10,12 @@ import android.view.ViewGroup;
 
 import com.example.webtoon_app.R;
 
-public class Fragment2 extends Fragment {
+public class BookFragmentActivity2 extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View v = inflater.inflate(R.layout.fragment_test_act2, container, false);
-
+        View v = inflater.inflate(R.layout.bookfragment_activity2, container, false);
         return v;
     }
 }

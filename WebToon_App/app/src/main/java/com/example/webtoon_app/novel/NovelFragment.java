@@ -2,10 +2,10 @@ package com.example.webtoon_app.novel;
 
 import android.os.Bundle;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.widget.Toolbar;
 import androidx.fragment.app.Fragment;
 import androidx.viewpager.widget.ViewPager;
+import androidx.viewpager2.widget.ViewPager2;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -16,9 +16,11 @@ import com.google.android.material.tabs.TabLayout;
 
 public class NovelFragment extends Fragment {
     Toolbar toolbar;
-    //TabLayout mid_tabLayout;
-    ViewPager mid_viewpager;
-    PagerAdapter pagerAdapter;
+    ViewPager2 viewPager;
+    ViewPagerAdapter viewPagerAdapter;
+    Fragment1 fragment1;
+    Fragment2 fragment2;
+    TabLayout tabLayout;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -27,21 +29,30 @@ public class NovelFragment extends Fragment {
         toolbar = v.findViewById(R.id.toolbar);
         toolbar.setTitle("웹소설");
 
-        TabLayout mid_tabLayout = v.findViewById(R.id.mid_tabLayout);
-        /*mid_tabLayout.addTab((mid_tabLayout.newTab().setText("one")));
-        mid_tabLayout.addTab((mid_tabLayout.newTab().setText("two")));
-        mid_tabLayout.addTab((mid_tabLayout.newTab().setText("three")));
-        mid_tabLayout.setTabGravity(TabLayout.GRAVITY_FILL);*/
-        pagerAdapter = new PagerAdapter(getChildFragmentManager(),mid_tabLayout.getTabCount());
-        mid_viewpager = v.findViewById(R.id.mid_viewpager);
-        mid_viewpager.setAdapter(pagerAdapter);
-        mid_viewpager.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(mid_tabLayout));
+        fragment1 = new Fragment1();
+        fragment2 = new Fragment2();
 
-        mid_tabLayout.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
+        viewPager = v.findViewById(R.id.viewpager_control);
+        viewPagerAdapter = new ViewPagerAdapter(getChildFragmentManager(),getLifecycle());
+        viewPagerAdapter.addFragment(fragment1);
+        viewPagerAdapter.addFragment(fragment2);
+
+        viewPager.setAdapter(viewPagerAdapter);
+        viewPager.setUserInputEnabled(false); //터치 스크롤 막음
+
+        tabLayout = v.findViewById(R.id.mid_tabLayout_test);
+        tabLayout.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
             @Override
             public void onTabSelected(TabLayout.Tab tab) {
-                mid_viewpager.setCurrentItem(tab.getPosition());
-                pagerAdapter.notifyDataSetChanged();
+                int pos = tab.getPosition();
+                switch (pos){
+                    case 0:
+                        viewPager.setCurrentItem(0);
+                        break;
+                    case 1:
+                        viewPager.setCurrentItem(1);
+                        break;
+                }
             }
 
             @Override
@@ -54,6 +65,7 @@ public class NovelFragment extends Fragment {
 
             }
         });
+
 
         return v;
     }

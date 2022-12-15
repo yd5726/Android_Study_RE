@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".MainActivity"
     android:orientation="vertical">
     <!--상단 툴바-->
@@ -15,12 +14,12 @@
         android:orientation="horizontal">
         <Button
             android:id="@+id/btn1"
-            android:text="프래그먼트1"
+            android:text="홈"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
         <Button
             android:id="@+id/btn2"
-            android:text="프래그먼트2"
+            android:text="스릴러"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
     </LinearLayout>

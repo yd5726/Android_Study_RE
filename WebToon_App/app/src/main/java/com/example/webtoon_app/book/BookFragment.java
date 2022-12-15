@@ -4,7 +4,6 @@ import android.os.Bundle;
 
 import androidx.appcompat.widget.Toolbar;
 import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentActivity;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -16,8 +15,8 @@ import com.example.webtoon_app.R;
 public class BookFragment extends Fragment {
     Toolbar toolbar;
     Button btn1, btn2;
-    FragmentActivity1 fragmentActivity1;
-    FragmentActivity2 fragmentActivity2;
+    BookFragmentActivity1 bookfragmentActivity1;
+    BookFragmentActivity2 bookFragmentActivity2;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -29,20 +28,21 @@ public class BookFragment extends Fragment {
         btn1 = v.findViewById(R.id.btn1);
         btn2 = v.findViewById(R.id.btn2);
 
-        fragmentActivity1 = new FragmentActivity1();
-        fragmentActivity2 = new FragmentActivity2();
+        bookfragmentActivity1 = new BookFragmentActivity1();
+        bookFragmentActivity2 = new BookFragmentActivity2();
+        getChildFragmentManager().beginTransaction().replace(R.id.frame_layout, bookfragmentActivity1).commit();
 
         btn1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                getChildFragmentManager().beginTransaction().replace(R.id.frame_layout, fragmentActivity1).commit();
+                getChildFragmentManager().beginTransaction().replace(R.id.frame_layout, bookfragmentActivity1).commit();
             }
         });
 
         btn2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                getChildFragmentManager().beginTransaction().replace(R.id.frame_layout, fragmentActivity2).commit();
+                getChildFragmentManager().beginTransaction().replace(R.id.frame_layout, bookFragmentActivity2).commit();
             }
         });
 
