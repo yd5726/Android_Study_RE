@@ -4,6 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
     <androidx.cardview.widget.CardView
+        android:layout_margin="10dp"
         android:layout_width="match_parent"
         android:layout_height="70dp"
         android:backgroundTint="@color/light_gray">

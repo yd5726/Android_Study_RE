@@ -16,6 +16,7 @@ import android.widget.FrameLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.webtoon_app.book.BookFragment;
 import com.example.webtoon_app.home.HomeFragment;
 import com.example.webtoon_app.novel.NovelFragment;
 import com.example.webtoon_app.webtoon.WebtoonFragment;
@@ -46,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
                 }else if(item.getItemId() == R.id.btm_item3){
                     changeFragment(new NovelFragment());
                 }else if(item.getItemId() == R.id.btm_item4){
-                    changeFragment(new HomeFragment());
+                    changeFragment(new BookFragment());
                 }else if(item.getItemId() == R.id.btm_item5){
                     changeFragment(new HomeFragment());
                 }
