@@ -17,10 +17,10 @@ public class PagerAdapter extends FragmentStatePagerAdapter {
     public Fragment getItem(int position) {
         switch (position){
             case 0:
-                Fragment1 fragment1 = new Fragment1();
+                Novel_Fragment_act1 fragment1 = new Novel_Fragment_act1();
                 return fragment1;
             case 1:
-                Fragment2 fragment2 = new Fragment2();
+                Novel_Fragment_act2 fragment2 = new Novel_Fragment_act2();
                 return fragment2;
             default:
                 return null;
