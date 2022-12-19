@@ -11,6 +11,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 
 import com.example.webtoon_app.R;
+import com.example.webtoon_app.novel.ViewPagerAdapter;
 
 public class BookFragment extends Fragment {
     Toolbar toolbar;

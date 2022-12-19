@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".box.BoxFragment"
+    android:orientation="vertical">
+    <com.google.android.material.tabs.TabLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabTextColor="@color/black"
+        android:background="@color/white"
+        app:tabIndicatorColor="@color/black"
+        app:tabIndicatorGravity="stretch"
+        app:tabRippleColor="@color/white"
+        app:tabMode="scrollable"
+        android:id="@+id/mid_tabLayout_box">
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tabIcon_0"
+            android:icon="@drawable/ic_baseline_search_24_black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tabIcon_1"
+            android:text="전체"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tabIcon_2"
+            android:text="웹툰"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tabIcon_3"
+            android:text="웹소설"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tabIcon_4"
+            android:text="채팅소설"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tabIcon_5"
+            android:text="책"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </com.google.android.material.tabs.TabLayout>
+    <RelativeLayout
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/box_cnt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="10dp"
+            android:text="1,031개"
+            android:textColor="@color/black"
+            android:textSize="16dp" />
+        <Button
+            android:layout_toRightOf="@+id/box_cnt"
+            android:text="편집"
+            android:layout_width="60dp"
+            android:layout_height="40dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="10dp"
+            android:text="최근 순"
+            android:textColor="@color/black"
+            android:textSize="16dp" />
+    </RelativeLayout>
+    <include layout="@layout/card_banner"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/box_recv"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>
