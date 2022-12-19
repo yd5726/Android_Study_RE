@@ -1,0 +1,39 @@
+< Retrofit API >
+- 안드로이드 => DB (접근x)
+- 안드로이드 => 미들웨어(Spring, Servlet) => DB
+- Url 요청 시 DB에 대신 접근해서 정보를 return 줄 수 있는 툴, 프로젝트를 의미함.
+- 사용 이유 : 미들웨어 까지 접근하는 방식도 다양함.
+              안드로이드에서 http 요청을 쉽게 하기위해 만든 것이다.
+  종류 : Volley, HttpClient(사용↓), Retrofit(가장 많이 사용)
+
+[ 작업 순서 1 ] manifest sync
+※ 앱에서 해줘야할 것 설정 (필수)
+- 앱에서 네트워크 통신을 구현하려면 Androidmanifests.xml에 권한이 필요하다 (인터넷)
+  <uses-permission android:name="android.permission.INTERNET"/>
+
+- usesCleartextTraffic = true => 앱에서 기본적으로 Http형태의 Url요청을 전부 막아놨음
+  사용하려면 해당하는 기능을 풀어줘야한다 (Androidmanifests.xml)
+  android:usesCleartextTraffic="true"
+
+[ 작업 순서 2 ] Retrofit 라이브러리
+Retrofit 공식 사이트 : https://square.github.io/retrofit/
+Retrofit API ( 정리 ) : 실무에서 많이 사용되는 API
+
+[ 작업 순서 3 ]
+3-1 ) ApiInterface 만들기
+3-2 ) CommonMethod 만들기
+3-3 ) ApiClient 만들기 <- 재사용하기 편하게 하려고 만듬.
+
+- 연동 테스트 해볼 것
+-----------------------------------------------------
+프로젝트 하나 만들기 : Exam_Middle_Retrofit
+
+Spring 연동 시켜보기 연습.
+
+데이터 받아온것으로 위젯의 내용하나 바꿔보기
+(ViewBinding 사용 연습)
+
+--1219---------------------------------------------------
+모듈화
+File > New > New Module > Android.. > 이름 변경 > Finish
+Open Module Setting > Dependencies > +
