@@ -4,7 +4,6 @@ import android.os.Bundle;
 
 import androidx.appcompat.widget.Toolbar;
 import androidx.fragment.app.Fragment;
-import androidx.viewpager.widget.ViewPager;
 import androidx.viewpager2.widget.ViewPager2;
 
 import android.view.LayoutInflater;
@@ -18,8 +17,8 @@ public class NovelFragment extends Fragment {
     Toolbar toolbar;
     ViewPager2 viewPager;
     ViewPagerAdapter viewPagerAdapter;
-    Fragment1 fragment1;
-    Fragment2 fragment2;
+    Novel_Fragment_act1 novelFragment1;
+    Novel_Fragment_act2 novelFragment2;
     TabLayout tabLayout;
 
     @Override
@@ -29,13 +28,13 @@ public class NovelFragment extends Fragment {
         toolbar = v.findViewById(R.id.toolbar);
         toolbar.setTitle("웹소설");
 
-        fragment1 = new Fragment1();
-        fragment2 = new Fragment2();
+        novelFragment1 = new Novel_Fragment_act1();
+        novelFragment2 = new Novel_Fragment_act2();
 
         viewPager = v.findViewById(R.id.viewpager_control);
         viewPagerAdapter = new ViewPagerAdapter(getChildFragmentManager(),getLifecycle());
-        viewPagerAdapter.addFragment(fragment1);
-        viewPagerAdapter.addFragment(fragment2);
+        viewPagerAdapter.addFragment(novelFragment1);
+        viewPagerAdapter.addFragment(novelFragment2);
 
         viewPager.setAdapter(viewPagerAdapter);
         viewPager.setUserInputEnabled(false); //터치 스크롤 막음

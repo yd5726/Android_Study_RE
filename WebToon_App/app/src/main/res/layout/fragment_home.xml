@@ -358,7 +358,9 @@
                     </LinearLayout>
                 </LinearLayout>
             </HorizontalScrollView>
-
+            <include layout="@layout/frame_style1"/>
+            <include layout="@layout/banner_style2"/>
+            <include layout="@layout/frame_style2"/>
         </LinearLayout>
     </androidx.core.widget.NestedScrollView>
 </LinearLayout>

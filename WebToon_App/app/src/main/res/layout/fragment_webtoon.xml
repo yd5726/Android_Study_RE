@@ -17,7 +17,7 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
             <!--배너이미지-->
-            <include layout="@layout/main_banner_style"/>
+            <include layout="@layout/banner_style1"/>
             <!--card_banner-->
             <include layout="@layout/card_banner"/>
             <!--card_3banner-->
