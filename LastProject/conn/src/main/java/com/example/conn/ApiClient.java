@@ -23,6 +23,7 @@ public class ApiClient {
         return retrofit;
     }
     */
+
     public Retrofit getApiClient(){
         Retrofit retrofit = new Retrofit.Builder()
                 .baseUrl(BASEURL)
