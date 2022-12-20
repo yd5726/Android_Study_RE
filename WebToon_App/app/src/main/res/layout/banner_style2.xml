@@ -28,25 +28,25 @@
             android:src="@drawable/ic_baseline_chevron_right_24" />
     </RelativeLayout>
     <ImageView
-        android:src="@drawable/th_webtoon1"
+        android:src="@drawable/event_banner1"
         android:layout_margin="10dp"
         android:scaleType="fitXY"
         android:layout_width="match_parent"
         android:layout_height="150dp"/>
     <ImageView
-        android:src="@drawable/th_webtoon2"
+        android:src="@drawable/event_banner2"
         android:layout_margin="10dp"
         android:scaleType="fitXY"
         android:layout_width="match_parent"
         android:layout_height="150dp"/>
     <ImageView
-        android:src="@drawable/th_webtoon3"
+        android:src="@drawable/event_banner3"
         android:layout_margin="10dp"
         android:scaleType="fitXY"
         android:layout_width="match_parent"
         android:layout_height="150dp"/>
     <ImageView
-        android:src="@drawable/th_webtoon4"
+        android:src="@drawable/event_banner4"
         android:layout_margin="10dp"
         android:scaleType="fitXY"
         android:layout_width="match_parent"
