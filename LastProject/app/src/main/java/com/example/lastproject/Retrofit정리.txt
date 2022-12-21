@@ -37,3 +37,14 @@ Spring 연동 시켜보기 연습.
 모듈화
 File > New > New Module > Android.. > 이름 변경 > Finish
 Open Module Setting > Dependencies > +
+
+--1221---------------------------------------------------
+네이버 소설 로그인 API
+Client ID : bw3BtoxCWT0OhBJA_DSR
+
+Client Secret : hcPsFPyTjb
+
+11.3.3. callProfileApi()
+GET 메서드로 API를 호출합니다. 성공하면 NidProfileCallback.onSuccess()가 실행됩니다.
+코드 예
+NidOAuthLogin().callProfileApi
