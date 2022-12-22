@@ -36,7 +36,8 @@ public class ExamActivity extends AppCompatActivity {
             new CommonMethod().sendPost("test1", new CommonMethod.CallBackResult() {
                 @Override
                 public void result(boolean isResult, String data) { // data : Spring 에서 return 을 줘야만 있는 부분
-                    Log.d("로그", "result: " + isResult);
+                    Log.d("로그", "isResult: " + isResult);
+                    Log.d("로그", "data: " + data);   // return 안줬으니 data 값 출력 x
                 }
             });
         });

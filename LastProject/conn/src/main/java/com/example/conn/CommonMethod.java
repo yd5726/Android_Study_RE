@@ -13,12 +13,13 @@ public class CommonMethod {
         params.put(key, value);
     }
     */
-    public CommonMethod setParams(String key, String value){
+    public CommonMethod setParams(String key, Object value){
         params.put(key, value);
-        return this;
+        return this;    /* 여기서 this 란? */
     }
 
     //POST 방식
+    // 2. 인터페이스 구현 callback.result()
     public void sendPost(String url, CallBackResult callback){
         ApiInterface apiInterface = new ApiClient().getApiClient().create(ApiInterface.class);
         Call<String> apiTest = apiInterface.connPost(url, params);
@@ -37,6 +38,7 @@ public class CommonMethod {
     }
 
     //GET 방식
+    // 2. 인터페이스 구현 callback.result()
     public void sendGet(String url, CallBackResult callback){
         ApiInterface apiInterface = new ApiClient().getApiClient().create(ApiInterface.class);
         Call<String> apiTest = apiInterface.connGet(url, params);
@@ -60,7 +62,7 @@ public class CommonMethod {
         apiTest.enqueue(callback);
     }
     */
-    // 1. 정의
+    // 1. 인터페이스 정의
     public interface CallBackResult{
         // 메인에서 CommonMethod 를 통해서 Callback<String> 인터페이스를 넘겨서 실행할 때마다
         // 두 개의 메소드가 오버라이드 됨. (onResponse, onFailure) => 하나로 합치고 싶음.
