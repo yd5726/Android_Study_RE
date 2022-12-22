@@ -15,12 +15,12 @@
             android:orientation="horizontal">
             <ImageView
                 android:src="@drawable/banner1"
-                android:scaleType="fitXY"
+                android:scaleType="center"
                 android:layout_width="410dp"
                 android:layout_height="300dp"/>
             <ImageView
                 android:src="@drawable/banner2"
-                android:scaleType="fitXY"
+                android:scaleType="center"
                 android:layout_width="410dp"
                 android:layout_height="300dp"/>
         </LinearLayout>
