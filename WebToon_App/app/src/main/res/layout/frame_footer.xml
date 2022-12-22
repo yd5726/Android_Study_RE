@@ -7,22 +7,41 @@
     tools:context=".MainActivity"
     android:orientation="vertical">
     <RelativeLayout
+        android:layout_marginTop="20dp"
         android:gravity="center"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <TextView
             android:id="@+id/customer"
-            android:text="1"
+            android:textColor="@color/dark_gray"
+            android:text="고객센터"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
         <TextView
-            android:id="@+id/buisness"
-            android:text="2"
+            android:id="@+id/business"
+            android:layout_toRightOf="@+id/customer"
+            android:textColor="@color/dark_gray"
+            android:text="사업자 정보"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
     </RelativeLayout>
-    <Button
+    <TextView
+        android:layout_margin="3dp"
+        android:id="@+id/kakao"
+        android:layout_gravity="center"
+        android:textColor="@color/dark_gray"
+        android:text="Kakao Entertainment Crop."
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
-
+    <ImageButton
+        android:layout_gravity="center"
+        android:id="@+id/go_to_up"
+        android:background="@drawable/shape_for_circle_button"
+        android:src="@drawable/ic_baseline_arrow_upward_24"
+        android:layout_width="30dp"
+        android:layout_height="30dp"/>
+    <View
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"/>
 </LinearLayout>
