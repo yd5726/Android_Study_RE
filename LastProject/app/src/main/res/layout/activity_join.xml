@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".member.JoinActivity"
+    android:orientation="vertical">
+    <!--
+        이미지뷰 클릭 시 갤러리 또는 카메라로 이미지를 사용자가
+        선택할 수 있게 만들 예정
+    -->
+    <ImageView
+        android:src="@drawable/ic_launcher_foreground"
+        android:id="@+id/imgv_profile"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"/>
+    <EditText
+        android:id="@+id/edt_email"
+        android:hint="이메일 입력"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <!--android:inputType="textPassword"-->
+    <EditText
+        android:id="@+id/edt_pw"
+        android:hint="비밀번호 입력"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:id="@+id/edt_name"
+        android:hint="이름 입력"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <RadioGroup
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/radio_man"
+            android:text="남"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <RadioButton
+            android:id="@+id/radio_woman"
+            android:checked="true"
+            android:text="여"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RadioGroup>
+    <Button
+        android:id="@+id/btn_join"
+        android:text="회원가입"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/btn_cancel"
+        android:text="취소"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

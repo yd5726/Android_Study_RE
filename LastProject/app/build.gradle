@@ -49,4 +49,6 @@ dependencies {
     implementation "com.kakao.sdk:v2-user:2.12.0"
     // 네이버 로그인 API
     implementation 'com.navercorp.nid:oauth:5.3.0' // jdk 11
+    // 2022 . 12 .26 KYM : 이미지를 쉽게 붙이기위한 LIB(API)
+    implementation 'com.github.bumptech.glide:glide:4.11.0'
 }
